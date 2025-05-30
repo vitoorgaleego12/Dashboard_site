@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meus Dashboards</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Meus Dashboards</h1>
+    <p>Este site exibe dashboards interativos em Power BI sobre áreas estratégicas da empresa: finanças, logística, RH, fluxo de caixa, emissões de gases e call center.</p>
+  </header>
+
+  <nav>
+    <button onclick="mostrar('logistica')">Logística</button>
+    <button onclick="mostrar('fluxo')">Fluxo de Caixa</button>
+    <button onclick="mostrar('rh')">RH</button>
+    <button onclick="mostrar('emissoes')">Emissões</button>
+    <button onclick="mostrar('callcenter')">Call Center</button>
+  </nav>
+
+  <main>
+    <section id="logistica" class="dashboard">
+      <h2>Dashboard de Logística</h2>
+      <iframe src="https://app.powerbi.com/view?r=eyJrIjoiZDE0MmMzN2EtMTc4Ni00MTRhLWFhMDQtOGMwMmE5NWQ5MzkyIiwidCI6ImNmNzJlMmJkLTdhMmItNDc4My1iZGViLTM5ZDU3YjA3Zjc2ZiIsImMiOjR9" frameborder="0" allowfullscreen></iframe>
+      <img src="qrcode_logistica.png" alt="QR Code Logística" />
+    </section>
+
+    <section id="fluxo" class="dashboard">
+      <h2>Dashboard de Fluxo de Caixa</h2>
+      <iframe src="https://app.powerbi.com/view?r=eyJrIjoiMjgwMGM4YWMtOTU1YS00ZjcwLTk0NmMtYjkwZWZjMmI3ODU0IiwidCI6ImNmNzJlMmJkLTdhMmItNDc4My1iZGViLTM5ZDU3YjA3Zjc2ZiIsImMiOjR9" frameborder="0" allowfullscreen></iframe>
+      <img src="qrcode_fluxo.png" alt="QR Code Fluxo de Caixa" />
+    </section>
+
+    <section id="rh" class="dashboard">
+      <h2>Dashboard de RH</h2>
+      <iframe src="https://app.powerbi.com/view?r=eyJrIjoiMjkyMTkxMTctMWQ0NC00ZWQzLTgxYmEtZmY5ZTY0YjYyYTEwIiwidCI6ImNmNzJlMmJkLTdhMmItNDc4My1iZGViLTM5ZDU3YjA3Zjc2ZiIsImMiOjR9" frameborder="0" allowfullscreen></iframe>
+      <img src="qrcode_rh.png" alt="QR Code RH" />
+    </section>
+
+    <section id="emissoes" class="dashboard">
+      <h2>Dashboard de Emissões de Gases</h2>
+      <iframe src="https://app.powerbi.com/view?r=eyJrIjoiMTA5YmMwZWUtY2M2My00MjAyLWFhYjctNTVmNGUyMjdjNzVlIiwidCI6ImNmNzJlMmJkLTdhMmItNDc4My1iZGViLTM5ZDU3YjA3Zjc2ZiIsImMiOjR9" frameborder="0" allowfullscreen></iframe>
+      <img src="qrcode_emissoes.png" alt="QR Code Emissões" />
+    </section>
+
+    <section id="callcenter" class="dashboard">
+      <h2>Dashboard de Call Center</h2>
+      <iframe src="https://app.powerbi.com/view?r=eyJrIjoiZDlmNmQ0OWItODlmNS00NTgxLTgyZjUtZDRhZDkzZmEzNjQzIiwidCI6ImNmNzJlMmJkLTdhMmItNDc4My1iZGViLTM5ZDU3YjA3Zjc2ZiIsImMiOjR9" frameborder="0" allowfullscreen></iframe>
+      <img src="qrcode_callcenter.png" alt="QR Code Call Center" />
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
