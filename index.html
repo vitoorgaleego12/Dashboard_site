@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Meus Dashboards</title>
+  <title>Portal de Dashboards Power BI</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -18,45 +18,55 @@
     <button onclick="mostrar('rh')">RH</button>
     <button onclick="mostrar('emissoes')">Emissões</button>
     <button onclick="mostrar('callcenter')">Call Center</button>
-    <button onclick="mostrar('vendas')">Vendas</button> <!-- Novo botão -->
+    <button onclick="mostrar('vendas')">Vendas</button>
+    <button onclick="mostrar('powerquery')">Power Query</button>
   </nav>
 
   <main>
     <section id="logistica" class="dashboard">
       <h2>Dashboard de Logística</h2>
       <iframe src="https://app.powerbi.com/view?r=eyJrIjoiZDE0MmMzN2EtMTc4Ni00MTRhLWFhMDQtOGMwMmE5NWQ5MzkyIiwidCI6ImNmNzJlMmJkLTdhMmItNDc4My1iZGViLTM5ZDU3YjA3Zjc2ZiIsImMiOjR9" frameborder="0" allowfullscreen></iframe>
-      <img src="qrcode_logistica.png" alt="QR Code Logística" />
     </section>
 
     <section id="fluxo" class="dashboard">
       <h2>Dashboard de Fluxo de Caixa</h2>
       <iframe src="https://app.powerbi.com/view?r=eyJrIjoiMjgwMGM4YWMtOTU1YS00ZjcwLTk0NmMtYjkwZWZjMmI3ODU0IiwidCI6ImNmNzJlMmJkLTdhMmItNDc4My1iZGViLTM5ZDU3YjA3Zjc2ZiIsImMiOjR9" frameborder="0" allowfullscreen></iframe>
-      <img src="qrcode_fluxo.png" alt="QR Code Fluxo de Caixa" />
     </section>
 
     <section id="rh" class="dashboard">
       <h2>Dashboard de RH</h2>
       <iframe src="https://app.powerbi.com/view?r=eyJrIjoiMjkyMTkxMTctMWQ0NC00ZWQzLTgxYmEtZmY5ZTY0YjYyYTEwIiwidCI6ImNmNzJlMmJkLTdhMmItNDc4My1iZGViLTM5ZDU3YjA3Zjc2ZiIsImMiOjR9" frameborder="0" allowfullscreen></iframe>
-      <img src="qrcode_rh.png" alt="QR Code RH" />
     </section>
 
     <section id="emissoes" class="dashboard">
       <h2>Dashboard de Emissões de Gases</h2>
       <iframe src="https://app.powerbi.com/view?r=eyJrIjoiMTA5YmMwZWUtY2M2My00MjAyLWFhYjctNTVmNGUyMjdjNzVlIiwidCI6ImNmNzJlMmJkLTdhMmItNDc4My1iZGViLTM5ZDU3YjA3Zjc2ZiIsImMiOjR9" frameborder="0" allowfullscreen></iframe>
-      <img src="qrcode_emissoes.png" alt="QR Code Emissões" />
     </section>
 
     <section id="callcenter" class="dashboard">
       <h2>Dashboard de Call Center</h2>
       <iframe src="https://app.powerbi.com/view?r=eyJrIjoiZDlmNmQ0OWItODlmNS00NTgxLTgyZjUtZDRhZDkzZmEzNjQzIiwidCI6ImNmNzJlMmJkLTdhMmItNDc4My1iZGViLTM5ZDU3YjA3Zjc2ZiIsImMiOjR9" frameborder="0" allowfullscreen></iframe>
-      <img src="qrcode_callcenter.png" alt="QR Code Call Center" />
     </section>
 
     <section id="vendas" class="dashboard">
       <h2>Dashboard de Vendas</h2>
       <iframe src="https://app.powerbi.com/view?r=eyJrIjoiZWJjODBmOTQtN2NhNS00YzZiLWJlMmQtYTI4OTgwZWNhNmY3IiwidCI6ImNmNzJlMmJkLTdhMmItNDc4My1iZGViLTM5ZDU3YjA3Zjc2ZiIsImMiOjR9" frameborder="0" allowfullscreen></iframe>
-      <img src="qrcode_vendas.png" alt="QR Code Vendas" />
     </section>
+
+    <section id="powerquery" class="dashboard">
+  <h2>Explorando o Power Query</h2>
+  <div class="powerquery-container">
+    <img src="query1.png" alt="Exemplo de uso do Power Query para transformação de dados" class="powerquery-img" />
+    <div class="powerquery-text">
+      <p><strong>O que é?</strong> O Power Query é uma ferramenta poderosa para <em>transformar, limpar e organizar dados</em> de forma visual e prática — sem precisar ser um mestre em programação.</p>
+      <p><strong>Na prática:</strong> Aqui, ele está sendo usado para <span class="highlight">tratar e organizar agendas</span>, deixando tudo pronto para ser usado em análises no Power BI.</p>
+      <p class="tip">💡 Dica: Imagine ter um "superfiltro" que organiza até os dados mais bagunçados — esse é o Power Query!</p>
+      <a href="https://learn.microsoft.com/pt-br/power-query/" target="_blank" class="saiba-mais-link">
+        Saiba Mais
+      </a>
+    </div>
+  </div>
+</section>
   </main>
 
   <script src="script.js"></script>
