@@ -140,3 +140,183 @@ img {
     width: 100%;
   }
 }
+
+/* VBA Section - Dark Theme */
+.vba-intro {
+  background: #111;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  border-left: 4px solid #0066cc;
+  color: #fff;
+}
+
+.vba-intro p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.vba-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background: #000;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Video Section */
+.vba-video-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: #fff;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  background: #000;
+  border-radius: 8px;
+  border: 1px solid #333;
+}
+
+.vba-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video-info {
+  background: #222;
+  padding: 15px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.video-info ul {
+  padding-left: 20px;
+  margin: 10px 0 0;
+  color: #eee;
+}
+
+/* Examples Grid */
+.vba-examples {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.example {
+  background: #111;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+  border: 1px solid #333;
+  color: #fff;
+}
+
+.example img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #333;
+}
+
+.example-text {
+  padding: 15px;
+}
+
+.example-text h4 {
+  margin-top: 0;
+  color: #4da6ff;
+  font-size: 18px;
+}
+
+.example-text p {
+  color: #ccc;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Benefits */
+.benefits {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.benefit-card {
+  background: #111;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 3px solid #0066cc;
+  color: #fff;
+}
+
+.benefit-card h4 {
+  color: #4da6ff;
+  margin-top: 0;
+}
+
+.benefit-card p {
+  color: #ccc;
+  margin-bottom: 0;
+}
+
+/* Resources */
+.resource-links {
+  list-style: none;
+  padding: 0;
+}
+
+.resource-links li {
+  margin-bottom: 10px;
+}
+
+.resource-links a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #4da6ff;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.2s;
+  background: #111;
+}
+
+.resource-links a:hover {
+  background: #222;
+  text-decoration: underline;
+}
+
+/* Text Styling */
+h2, h3, h4 {
+  color: #fff;
+}
+
+h2 {
+  border-bottom: 2px solid #0066cc;
+  padding-bottom: 10px;
+}
+
+h3 {
+  color: #4da6ff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .vba-examples {
+    grid-template-columns: 1fr;
+  }
+  
+  .benefits {
+    grid-template-columns: 1fr;
+  }
+}
